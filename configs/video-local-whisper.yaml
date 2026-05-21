@@ -1,0 +1,25 @@
+input_dir: "."
+input_files:
+  - "C:/Users/fteno/Downloads/tsn-cywd-pvd (2025-11-23 15_41 GMT-3).mp4"
+output_dir: "C:/projetos/knowledge-vault-pipeline/output/video-local-whisper"
+profile: "generic-openai"
+language: "pt-BR"
+
+features:
+  pdf: false
+  text: false
+  audio_transcription: true
+  image_ocr: false
+  openai_extraction: true
+  normalize_portuguese: true
+  validate_links: true
+
+openai:
+  extraction_model: "gpt-5.4-mini"
+  transcription_backend: "local-whisper"
+  transcription_model: "gpt-4o-mini-transcribe"
+  whisper_model: "small"
+  whisper_language: "pt"
+  max_audio_mb: 25
+  max_chunk_chars: 18000
+  max_cards_per_chunk: 8

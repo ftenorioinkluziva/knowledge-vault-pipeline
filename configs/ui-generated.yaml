@@ -1,0 +1,27 @@
+input_dir: C:\projetos\knowledge-vault-pipeline\_unused
+output_dir: C:/projetos/knowledge-vault-pipeline/output/youtube-functional
+profile: youtube-functional-medicine
+language: pt-BR
+features:
+  pdf: false
+  text: true
+  audio_transcription: false
+  image_ocr: false
+  openai_extraction: true
+  normalize_portuguese: true
+  validate_links: true
+openai:
+  extraction_model: gpt-5.4-mini
+  transcription_model: gpt-4o-mini-transcribe
+  max_audio_mb: 25
+  max_chunk_chars: 18000
+  max_cards_per_chunk: 8
+youtube:
+  rss_url: https://www.youtube.com/feeds/videos.xml?channel_id=UC2D2CMWXMOVWx7giW1n3LIg
+  urls: []
+  skip_shorts: true
+  limit: 5
+  state_file: youtube_processed.json
+  apify_actor: karamelo~youtube-transcripts
+  poll_seconds: 10
+  timeout_seconds: 900

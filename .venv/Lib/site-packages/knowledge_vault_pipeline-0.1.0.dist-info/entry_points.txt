@@ -1,0 +1,2 @@
+[console_scripts]
+kvp = knowledge_vault_pipeline.cli:main

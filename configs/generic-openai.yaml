@@ -1,0 +1,20 @@
+input_dir: "C:/caminho/dos/documentos"
+output_dir: "C:/caminho/da/saida"
+profile: "generic-openai"
+language: "pt-BR"
+
+features:
+  pdf: true
+  text: true
+  audio_transcription: false
+  image_ocr: false
+  openai_extraction: true
+  normalize_portuguese: true
+  validate_links: true
+
+openai:
+  extraction_model: "gpt-5.4-mini"
+  transcription_model: "gpt-4o-mini-transcribe"
+  max_audio_mb: 25
+  max_chunk_chars: 18000
+  max_cards_per_chunk: 8
