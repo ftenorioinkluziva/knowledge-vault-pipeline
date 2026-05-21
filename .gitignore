@@ -1,0 +1,94 @@
+# .gitignore para o projeto knowledge-vault-pipeline
+# Ignora arquivos gerados, ambientes virtuais, caches, IDEs e outputs
+
+# Byte-compiled / optimized / DLLs
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+parts/
+eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-wheel-metadata/
+wheelhouse/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment variables / secrets
+.env
+.env.*
+secrets.yml
+credentials/
+*.pem
+*.key
+*.crt
+
+# Pytest and test output
+.pytest_cache/
+.cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# VS Code / IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+
+# Databases
+*.sqlite3
+*.db
+*.db-journal
+
+# Sphinx
+docs/_build/
+
+# Type checkers
+.mypy_cache/
+.pytype/
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Project-specific
+knowledge_vault_pipeline.egg-info/
+*.egg-info
+
+# Output / generated vault
+output/
+
+# Local editors / misc
+.vscode/
+.idea/
+
+# End of file
